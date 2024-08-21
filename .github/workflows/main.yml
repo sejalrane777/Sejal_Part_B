@@ -24,14 +24,14 @@ jobs:
           pip install -r requirements/test_requirements.txt
     - name: Train pipeline
       run: |
-        python bikeshare_project/bikeshare_model/train_pipeline.py
+        python bikeshare_model/train_pipeline.py
     - name: Test with pytest
       run: |
           pytest
     - name: Format code with Black
       run: |
-        black bikeshare_project/bikeshare_model/*.py
+        black bikeshare_model/*.py
     - name: Lint with pylint
       run: |
         pylint --disable=R,C
-        bikeshare_project/bikeshare_model/{pipeline,train_pipeline,predict}.py
+        bikeshare_model/{pipeline,train_pipeline,predict}.py
