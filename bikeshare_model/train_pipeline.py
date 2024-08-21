@@ -32,7 +32,7 @@ def run_training() -> None:
 
     # Pipeline fitting
     bikeshare_pipe.fit(X_train, y_train)
-    # y_pred = bikeshare_pipe.predict(X_test)
+    y_pred = bikeshare_pipe.predict(X_test)
 
     # Calculate the score/error
     print("R2 score:", r2_score(y_test, y_pred).round(2))
