@@ -21,7 +21,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-          pip install -r bikeshare_project/requirements/test_requirements.txt
+          pip install -r requirements/test_requirements.txt
     - name: Train pipeline
       run: |
         python bikeshare_project/bikeshare_model/train_pipeline.py
