@@ -22,6 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
           pip install -r requirements/test_requirements.txt
+          pip install pylint
     - name: Train pipeline
       run: |
         python bikeshare_model/train_pipeline.py
