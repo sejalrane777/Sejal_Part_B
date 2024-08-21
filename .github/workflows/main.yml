@@ -35,5 +35,4 @@ jobs:
           pytest
     - name: Lint with pylint
       run: |
-        pylint --disable=R,C
-bikeshare_model/{pipeline,train_pipeline,predict}.py
+        pylint --disable=R,C bikeshare_model/{pipeline,train_pipeline,predict}.py
