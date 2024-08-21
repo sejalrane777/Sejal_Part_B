@@ -20,7 +20,7 @@ app = FastAPI(
 root_router = APIRouter()
 
 
-@root_router.get("/")
+@root_router.get("/cd")
 def index(request: Request) -> Any:
     """Basic HTML response."""
     body = (
