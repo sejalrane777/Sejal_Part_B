@@ -28,9 +28,6 @@ jobs:
     - name: Test with pytest
       run: |
           pytest
-    - name: Format code with Black
-      run: |
-        black *.py
     - name: Lint with pylint
       run: |
         pylint --disable=R,C
