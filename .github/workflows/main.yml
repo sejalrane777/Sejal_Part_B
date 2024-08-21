@@ -30,7 +30,7 @@ jobs:
           pytest
     - name: Format code with Black
       run: |
-        black bikeshare_model/*.py
+        black *.py
     - name: Lint with pylint
       run: |
         pylint --disable=R,C
