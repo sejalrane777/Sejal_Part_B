@@ -23,9 +23,13 @@ jobs:
       run: |
           pip install -r requirements/test_requirements.txt
           pip install pylint
+          pip install black
     - name: Train pipeline
       run: |
         python bikeshare_model/train_pipeline.py
+    - name: Format code with Black
+      run: |
+        black bikeshare_project/bikeshare_model/*.py
     - name: Test with pytest
       run: |
           pytest
