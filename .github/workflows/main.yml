@@ -1,4 +1,4 @@
-name: Part_B
+name: Python app
 on:
 push:
 branches: [ "main" ]
